@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Encontre no Google</h2>
+    <form action="https://www.google.com/search">
+        <label for="q">O que deseja pesquisar?</label>
+        <!-- min, max, size etc... can be add in a input to limit the input -->
+        <input type="text" id="q" name="q" placeholder="Digite aqui sua pesquisa" autocomplete="off"  required>
+        <!-- É possível passar multiplos parametros, mas nesse caso o Google só vai ignorar o segundo -->
+        <!-- <input type="text" id="x" name="x" placeholder="Digite aqui sua pesquisa"> -->
+        <input type="submit" value="Pesquisar">
+    </form>
+    <h3>Outra Opção de input</h3>
+    <input list="browsers">
+    <datalist id="browsers">
+        <option value="Internet Explorer"></option>
+        <option value="Firefox"></option>
+        <option value="Chrome"></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option>
+    </datalist>
+</body>
+</html>

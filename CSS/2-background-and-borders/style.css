@@ -1,0 +1,22 @@
+h1 {
+  color: #ffffff;
+  background-color: #00000062;
+  border: 2px dashed #00ffff79;
+  /* border-color: #00ffff79;
+  border-width: 2px;
+  border-style: dashed; */
+}
+
+h2 {
+  color: #bbbbbb;
+}
+
+li {
+  color: #d4d4d4;
+}
+
+body {
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -1,0 +1,29 @@
+/* Nesse caso, só os anchors diretamente dentro de um list item serão afetados */
+li > a {
+  color: rgb(115, 182, 145);
+}
+
+/* Nesse caso, qualquer span contido dentro de um list item, diretamente ou indiretamente será afetado*/
+li span {
+  color: rgb(182, 145, 115);
+}
+
+/* Esse afetará todo h3 que pospor um h1*/
+h1 + h3 {
+  border: 2px dashed #999;
+}
+
+/* Busca por atributo*/
+a[href="example"] {
+  color: rgb(158, 115, 182);
+}
+
+/* Pseudo-classe: Selecionar o terceiro li */
+li:nth-of-type(3) {
+  font-size: 20px;
+}
+
+/* Pseudo-classe: Aplicar estilo somente nos elementos impares da lista*/
+li:nth-of-type(odd) {
+  text-decoration: line-through;
+}

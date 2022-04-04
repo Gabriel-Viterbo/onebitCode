@@ -1,0 +1,16 @@
+p {
+  font-family: Arial, Helvetica, sans-serif; /*sans-serif is a generic-family, it's like a type of font, not a font in itself*/
+  font-size: 20px;
+  font-weight: 600; /*equivalent to bold*/
+  line-height: 3;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  /* text-align: center; */
+  text-decoration: underline;
+  /* margin-top: 100px;
+  margin-left: 20px; */
+  margin: 100px auto 20px auto ; /*top, right, bottom and left // making a auto margin*/
+  width: 50%;
+}

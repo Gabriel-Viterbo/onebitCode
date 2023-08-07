@@ -6,6 +6,13 @@ h1{
   font-family: 'Montserrat', sans-serif;
 }
 
+.post-container {
+  width: 70%;
+  max-height: 100%;
+  margin: 0 auto 0 auto;
+  background-color: #fffafa;
+}
+
 .post-container .date {
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
@@ -20,11 +27,4 @@ h1{
 
 .post {
   padding: 40px;
-}
-
-.post-container {
-  width: 70%;
-  height: 100%;
-  margin: 0 auto 0 auto;
-  background-color: #fffafa;
 }

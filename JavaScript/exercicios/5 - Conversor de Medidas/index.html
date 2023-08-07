@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de medidas</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="group1">
+        <input type="text" id="number" />
+        <input type="text" id="defaultUnit" value="m" disabled />
+
+        ►
+
+        <select id="select">
+          <option value="mm">Milímetro (mm)</option>
+          <option value="cm">Centímetro (cm)</option>
+          <option value="dm">Decímetro (dm)</option>
+          <option value="dam">Decâmetro (dam)</option>
+          <option value="hm">Hectômetro (hm)</option>
+          <option value="km">Quilômetro (km)</option>
+        </select>
+      </div>
+
+      <div id="group2">
+        <button onclick="convert()">Converta!</button>
+      </div>
+
+      <div id="result"></div>
+    </div>
+  </body>
+</html>

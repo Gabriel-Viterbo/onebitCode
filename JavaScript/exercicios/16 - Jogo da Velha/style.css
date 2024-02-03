@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #861657;
+  background-image: linear-gradient(326deg, #861657 0%, #ffa69e 74%);
+}
+
+.container {
+  justify-content: space-between;
+  align-items: flex-start;
+  /* border: solid 1px black; */
+  width: 50vw;
+  max-width: 50vh;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: orange; */
+  gap: 10px;
+}
+
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: solid 200px black; */
+  aspect-ratio: 1 / 1;
+  flex: 0 0 calc(33.33% - 10px);
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.478);
+  color: white;
+  letter-spacing: 1px;
+  font-family: 'Sunshiney', cursive;
+  font-weight: bold;
+  font-size: 86px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover:hover {
+  filter: saturate(100%);
+  cursor: pointer;
+  transform: scale(1.1);
+  /* border-radius: 10%; */
+}
+
+.markedSquare {
+  cursor: not-allowed;
+}
+
+.resetBtn {
+  margin-top: 5vh;
+  width: 50vw;
+  /* height: 5vh; */
+  aspect-ratio: 3 / 1;
+  max-width: 150px;
+  font-size: 1.5rem;
+  overflow: hidden;
+  border: none;
+  border-radius: 15px;
+  background: #ffffffc5;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+}
+
+.resetBtn:hover {
+  color: #e8e8e8;
+  background-color: #000000c5;
+}
+
+.resetBtn:hover::before {
+  width: 100%;
+}
+
+.title {
+  font-family: 'Moirai One', system-ui;
+  font-weight: 900;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  font-size: 5rem;
+}
+
+@media (max-height: 580px) {
+  .square {
+    font-size: 3rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .square {
+    font-size: 3rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
+@media (max-height: 400px) {
+  .square {
+    font-size: 2rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .square {
+    font-size: 2rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+}
+@media (max-height: 280px) {
+  .square {
+    font-size: 1rem;
+  }
+  .resetBtn {
+    font-size: 0.8rem;
+  }
+  .title {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 180px) {
+  .square {
+    font-size: 1rem;
+  }
+  .resetBtn {
+    font-size: 0.8rem;
+  }
+  .title {
+    font-size: 0.8rem;
+  }
+}

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 const Mean = (...numbers) => {
   const sum = numbers.reduce((acc, currentValue) => {
     return acc + currentValue;

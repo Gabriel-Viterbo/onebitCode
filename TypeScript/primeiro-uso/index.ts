@@ -12,7 +12,12 @@ const setPilot = async (
 
 const accelerate = async (
   targetSpeed: number,
-  spaceship: { name?: string; pilot?: string; speed: any; inMission?: boolean }
+  spaceship: {
+    name?: string;
+    pilot?: string;
+    speed: number;
+    inMission?: boolean;
+  }
 ) => {
   spaceship.speed = targetSpeed;
 };
@@ -21,7 +26,7 @@ const sendToMission = async (spaceship: {
   name?: string;
   pilot?: string;
   speed?: number;
-  inMission: any;
+  inMission: boolean;
 }) => {
   spaceship.inMission = true;
 };
